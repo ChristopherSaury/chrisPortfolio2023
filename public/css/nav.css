@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+#desktop-nav{
+    position: fixed;
+    background-color: #fff;
+    margin-right: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid rgb(162, 162, 162);
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    transition: 0.5s;
+}
+.nav-click{
+    width: 80px;
+}
+#desktop-nav .fa-bars{
+    font-size: 35px;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+/* #desktop-nav .icons-container{
+    padding: 5% 0 0 5%;
+} */
+#desktop-nav .links-container{
+    display: flex;
+    justify-content: center;
+}
+#desktop-nav .nav-links{
+    width: calc(100% - 50%);
+    height: auto;
+    list-style-type: none;
+    padding: 5% 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#desktop-nav .nav-links a{
+    text-decoration: none;
+    font-family: 'Fira Mono', monospace;
+    font-weight: bold;
+    color: #222;
+}
+#desktop-nav .nav-links a .page{
+    font-size: 20px;
+}
+#desktop-nav .nav-links a .nav-icon{
+    display: none;
+    font-size: 20px;
+}
+#desktop-nav .copyright{
+    text-align: center;
+    margin: 0;
+    padding: 0 10%;
+}
+#desktop-nav .copyright p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+}
