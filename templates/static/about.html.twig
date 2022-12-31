@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} About - Saury Christopher Portfolio {% endblock %}
+{% block stylesheets %} <link rel="stylesheet" href="{{asset('css/about.css')}}"> {% endblock %}
+
+{% block body %}
+<section id="about">
+    <h1 class="text-center mt-4 title-abt">ABOUT ME</h1>
+    <div class="container">
+        <div class="row abt-section">
+            <div class="col-lg">
+                <h3>Get to know me</h3>
+                <p class="mt-3">
+                    I am a full stack web developer who can create website models and realize it for you. I can make these website with or without a database according to your needs. Feel free to watch my projects on this portfolio. 
+                </p>
+                <p>
+                    I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+                </p>
+                <div class="btn-wrapper">
+                    <a class="gtk-link" href="">Download CV</a>
+                    <a class="gtk-link" href="">Contact</a>
+                </div>
+            </div>
+            <div class="col-lg">
+                <h3>My skills</h3>
+                <div class="skills">
+                    <span>HTML</span><span>CSS</span>
+                    <span>PHP</span> <span>Symfony</span>
+                    <span>JavaScript</span> <span>MySQL</span>
+                    <span>GIT</span> <span>Github</span>
+                    <span>Figma</span> <span>Scrum Methodology</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js %}
+    <script>
+        let deskNav = document.getElementById('desktop-nav');
+        let burgerBtn = document.querySelector('.icons-container .fa-bars');
+
+        burgerBtn.addEventListener('click', function(){
+            if(!deskNav.classList.contains('nav-click')){
+                deskNav.nextElementSibling.style.paddingLeft = '300px';
+            }else if(deskNav.classList.contains('nav-click')){
+                deskNav.nextElementSibling.style.paddingLeft = '80px';
+            }
+        });
+    </script>
+{% endblock %}

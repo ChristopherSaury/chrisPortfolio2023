@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="list-item">
-                        <a href="">
+                        <a href="{{path('app_about')}}">
                             <span class="page">About</span>
                             <span class="nav-icon" title="About page"><i class="fas fa-user"></i></span>
                         </a>
@@ -55,11 +55,12 @@
             </div>
             <div class="copyright">
                 <p>
-                    Christopher Saury &copy; 2023 All rights reserved
+                    Christopher Saury &copy; <span class="currYear"></span> All rights reserved
                 </p>
             </div>
         </nav>
         {% block body %}{% endblock %}
     </body>
     <script src="{{asset('js/nav.js')}}"></script>
+    {% block js %}{% endblock %}
 </html>

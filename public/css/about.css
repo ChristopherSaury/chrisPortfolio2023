@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#about{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1eeee;
+    padding-left: 300px;
+    transition: 0.5s;
+}
+#about .title-abt{
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+}
+#about .title-abt::after{
+    content: "";
+    display: block;
+    background-color: #222;
+    width: 70px;
+    height: 5px;
+    position: absolute;
+    top: 130%;
+    left: 48%;
+}
+#about .abt-section{
+    margin-top: 6%;
+}
+#about .abt-section p{
+    font-size: 18px;
+}
+#about .skills{
+    width: 100%;
+    height: auto;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#about .skills span{
+    padding: 10px 20px;
+    background-color: #cfc9c9;
+    border-radius: 4%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#about .btn-wrapper{
+    width: 100%;
+    height: auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#about .btn-wrapper .gtk-link{
+    background-color: #222;
+    color: #fff;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    font-family: 'Fira Mono', monospace;
+    box-shadow: 2px 2px 2px #222;
+}
+#about .btn-wrapper .gtk-link:hover{
+    background-color: rgb(63, 63, 63);
+}
