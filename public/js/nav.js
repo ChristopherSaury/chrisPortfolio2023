@@ -3,6 +3,7 @@ let menuIcon = document.querySelector('.icons-container .fa-bars');
 let chrisCopyright = document.querySelector('#desktop-nav .copyright p');
 let navLinks = document.querySelectorAll('#desktop-nav .links-container a .page');
 let navIcons = document.querySelectorAll('#desktop-nav .links-container a .nav-icon');
+document.querySelector('#desktop-nav .copyright p .currYear').innerHTML = new Date().getFullYear(); 
 
 menuIcon.addEventListener('click', function(){
         if(!nav.classList.contains('nav-click')){
