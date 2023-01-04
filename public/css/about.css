@@ -62,6 +62,7 @@
     border-radius: 4px;
     font-family: 'Fira Mono', monospace;
     box-shadow: 2px 2px 2px #222;
+    white-space: nowrap;
 }
 #about .btn-wrapper .gtk-link:hover{
     background-color: rgb(63, 63, 63);
